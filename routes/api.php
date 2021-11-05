@@ -48,4 +48,6 @@ Route::delete('posts/{id}', function($id) {
 });
 
 
-
+Route::fallback(function() {
+    return "Your Route Laravel Not Found";
+});
